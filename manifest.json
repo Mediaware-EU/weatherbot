@@ -1,0 +1,29 @@
+{
+  "grove": 1,
+  "id": "app.mango.grove.weatherbot",
+  "name": "Weatherbot",
+  "version": "0.2.1",
+  "description": "A headless Root that adds a weather slash command, interactive output cards, status-bar badges, and answers !w in channel.",
+  "author": {
+    "name": "Mango",
+    "url": "https://mango.app"
+  },
+  "readme": "README.md",
+  "entry": "index.html",
+  "presentation": {
+    "surfaces": [
+      "headless"
+    ]
+  },
+  "capabilities": [
+    "commands.register",
+    "statusbar",
+    "channel.read",
+    "channel.send",
+    "storage"
+  ],
+  "hostPermissions": [
+    "https://api.open-meteo.com",
+    "https://geocoding-api.open-meteo.com"
+  ]
+}
